@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Poppins Font Starts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Poppins Font CDN Ends -->
+    <!-- Font Awesome Starts -->
+    <script src="https://kit.fontawesome.com/a551d7bdf7.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome Ends -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div id="progressBar"></div>
+        <div id="ScrollPath"></div>
+        <!-- ===========Left================== -->
+        <aside class="leftSideBar">
+            <a class="profile" href="#">
+                <div class="profile-pic">
+                    <img src="./img/mypic.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h4>H.M.YOUSUF</h4>
+                    <p class="death-text">@developer_yousuf</p>
+                </div>
+            </a>
+            <!-- =======Sidebar========= -->
+            <div class="sideBar">
+                <a class="leftSideMenuItem" id="home" href="index.html"><span><i class="fas fa-home"></i></span><h3>Home</h3></a>
+                <a class="leftSideMenuItem" id="friends" href="friends.html"><span><i class="fas fa-user-friends"></i></span><h3>Friends</h3></a>
+                <a class="leftSideMenuItem" id="messages" href="messages.html"><span><i class="fas fa-envelope"></i></span><h3>Messages</h3></a>
+                <a class="leftSideMenuItem" id="feeds" href="feeds.html"><span><i class="fas fa-compass"></i></span><h3>Feeds</h3></a>
+                <a class="leftSideMenuItem" id="video" href="video.html"><span><i class="fas fa-video"></i></span><h3>Video</h3></a>
+                <a class="leftSideMenuItem" id="notifications" href="notifications.html"><span><i class="fas fa-bell"></i></span><h3>Notifications</h3></a>
+                <a class="leftSideMenuItem" id="themes" href="themes.html"><span><i class="fas fa-palette"></i></span><h3>Themes</h3></a>
+                <a class="leftSideMenuItem" id="seeMoreBtn" href="#"><span><i class="fas fa-caret-down"></i></span><h3>See More</h3></a>
+            </div>
+            <!-- ===Sidebar Ends========= -->
+            <button class="btn btn-settings" id="settingsBtn"><i class="fas fa-gear"></i>Settings</button>
+        </aside>
+        <!-- =======Middle================ -->
+        <main class="main">
+            <!-- =====Stories==== -->
+             <div class="stories">
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="./img/mypic.jpg" alt="">
+                     </div>
+                     <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="./img/mypic.jpg" alt="">
+                     </div>
+                     <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="./img/mypic.jpg" alt="">
+                     </div>
+                     <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="./img/mypic.jpg" alt="">
+                     </div>
+                     <p class="name">Your Story</p>
+                </div>
+             </div>
+             <!-- =-====Stories Ends====== -->
+            <form class="create-post">
+                <div class="profile-pic">
+                    <img src="./img/mypic.jpg" alt="">
+                </div>
+                <input type="text" placeholder="What's on your Mind?">
+                <input type="submit" class="btn" value="Post">
+              </form>
+              <!-- =========Feeds======== -->
+               <div class="feeds">
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="./img/mypic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3>H.M.YOUSUF</h3>
+                            <small>Dhaka, 30 Minutes ago</small>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="title">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto dolor, dolorem, ipsam veritatis explicabo at tenetur dicta ducimus, velit deserunt nihil? Maiores, sed provident dolor consequuntur ipsam eius explicabo.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mypic.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <div class="react">
+                            <i class="fas fa-heart"></i><span class="like-count">0</span>
+                            <i class="fas fa-comment"></i><span class="comment-count">0</span>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="comments-section">
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Post Comment</button>
+                    </div>
+                    <div class="share-popup">
+                        <ul>
+                            <li><a href="https://www.messenger.com" target="_blank">Messenger</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                            <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                            <li><a href="https://twitter.com" target="_blank">X (Twitter)</a></li>
+                            <li><a href="#" target="_blank">Other Social Media</a></li>
+                            <li><a href="#" id="copyLink">Copy Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- feed Ends -->
+                
+                
+            </div>
+        </main>
+        <!-- =============Right================ -->
+        <aside class="rightSideBar">
+            <div class="friendReqCont">
+                <div class="friendReq">
+                    <div class="friendReqInfo">
+                        <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                    </div>
+                    <div class="actionBtn">
+                        <div class="btn acpectBtn">Acpect</div>
+                        <div class="btn declineBtn">Decline</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-cont">
+                <div class="heading">
+                    <h4 class="heading-friend">Friends</h4>
+                </div>
+                <!-- Search Bar for friends -->
+                 <div class="serach-bar">
+                    <i class="fas fa-search"></i>
+                    <input class="search-box" type="search" placeholder="Search Friends">
+                 </div>
+                 <!-- Friends -->
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+                 <div class="friend">
+                    <img src="./img/mypic.jpg" alt="">
+                    <h3>H.M.YOUSUF</h3>
+                 </div>
+            </div>
+        </aside>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

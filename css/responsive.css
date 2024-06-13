@@ -1,0 +1,29 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .sideBar .leftSideMenuItem h3 {
+        display: none;
+    }
+    .profile .profile-info {
+        display: none;
+    }
+    .rightSideBar {
+        display: none;
+    }
+    .container {
+        grid-template-columns: 15% auto ;
+    }
+    .leftSideBar {
+        width: 20%;
+    }
+    .main{
+        width: 60%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .leftSideBar {
+        display: none;
+    }
+    
+}
